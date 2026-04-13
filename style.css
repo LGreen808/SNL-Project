@@ -157,6 +157,11 @@ main {
     font-weight: bold;
 }
 
+button {
+    background-color: lightgrey !important;
+    border: none;
+}
+
 .page-title {
     text-align: center;
     margin-bottom: 1.5rem;
