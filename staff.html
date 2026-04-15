@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Marlboro High School Hitching Post</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="top-bar container-fluid">
+                <div class="date-panel">
+                    <span id="current-date"></span>
+                </div>
+                <nav class="site-nav">
+                    <a href="#">News and Info</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Student Life</a>
+                    <a href="#">Pop Culture</a>
+                    <a href="#">Literary Magazine</a>
+                    <a href="#">Senior Edition</a>
+                </nav>
+            </div>
+            <div class="brand-panel">
+            <a href="index.html"><img src="img/Newspaper Logo.jpg" alt="The Hitching Post logo" class="brand-logo" /></a>
+            </div>
+        </header>
+
+        <main>
+            <section class="story-grid container">
+                <div class="page-title">
+                    
+                    <h1>2025 - 2026 Staff</h1>
+                </div>
+               
+                <div class="grid-items">
+    <div class="card mt-4" data-role="editor"><p>Molly Chodos -- Editor in Chief</p></div>
+    <div class="card mt-4" data-role="editor"><p>Madison Beard -- Assistant Editor</p></div>
+    <div class="card mt-4" data-role="editor"><p>Dani Kapp -- Assistant Editor</p></div>
+    <div class="card mt-4" data-role="editor"><p>Samantha Ciaglia -- Assistant Editor</p></div>
+
+    <div class="card mt-4" data-role="writer"><p>Joshua Abramovich -- Staff Writer</p></div>
+
+    <div class="card mt-4" data-role="writer"><p>Jeremy Barenberg--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Peter Trezza--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Serena Goragandhi--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Sean Fitter--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Ben Saada--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Andrew Freid--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Sofia Diana Karabynosh--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Manan Jain--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Vaibhav Herugu--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Rupsa Biswas--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Olivia Altay--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Zainab Rana--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Layla Green--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Julien Serbienko--Staff Writer</p></div>
+    <div class="card mt-4" data-role="writer"><p>Remy Serbienko--Staff Writer</p></div>
+    <div class="card mt-4" data-role="artist"><p>Joe Ricardi--Staff Artist</p></div>
+                   
+
+ 
+                <div class="filter-section mb-4">
+                    <label for="role-filter" class="form-label">Staff Years</label>
+                    <select id="role-filter" class="form-select">
+                        <option value="all">2025-2026</option>
+                        <option value="editor">2026-2027</option>
+                        <option value="writer">2027-2028</option>
+                        <option value="artist">2028-2029</option>
+                    </select>
+                </div>
+
+
+
+
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer text-center">
+            <br>
+            <h4 class="mb-4 mt-3">The Marlboro High School Hitching Post and Kaleidoscope</h4>
+            <a href="index.html"><button><p>Home</p></button></a>
+            <a href="about.html"><button><p>About</p></button></a>
+            <a href="staff.html"><button><p>Staff</p></button></a>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            function updateCurrentDate() {
+                const dateElement = document.getElementById("current-date");
+                if (!dateElement) return;
+                const now = new Date();
+                const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+                dateElement.textContent = now.toLocaleDateString(undefined, options);
+            }
+
+            updateCurrentDate();
+            setInterval(updateCurrentDate, 60000);
+
+            // Dropdown filter function
+            document.getElementById('role-filter').addEventListener('change', function() {
+                const selectedRole = this.value;
+                const cards = document.querySelectorAll('.grid-items .card');
+                
+                cards.forEach(card => {
+                    if (selectedRole === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        if (card.getAttribute('data-role') === selectedRole) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
