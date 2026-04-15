@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Marlboro High School Hitching Post</title>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+        <!-- Bootstrap CSS v5.2.1 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="top-bar container-fluid">
+                <div class="date-panel">
+                    <span id="current-date"></span>
+                </div>
+                <nav class="site-nav">
+                    <a href="#">News and Info</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Student Life</a>
+                    <a href="#">Pop Culture</a>
+                    <a href="#">Literary Magazine</a>
+                    <a href="#">Senior Edition</a>
+                </nav>
+            </div>
+            <div class="brand-panel">
+            <a href="index.html"><img src="img/Newspaper Logo.jpg" alt="The Hitching Post logo" class="brand-logo" /></a>
+            </div>
+        </header>
+
+        <main class="page-shell">
+            <section class="story-grid container">
+                <div class="page-title">
+                <!--This page would show the most recent stories-->
+                    <h1>About</h1>
+                </div>
+                <div class="grid-items">
+ <div class="card" style="background-image: linear-gradient(to bottom, rgb(235, 225, 83), rgb(235, 225, 83), rgb(56, 86, 218), rgb(56, 86, 218), rgb(56, 86, 218)); border-bottom: 4px solid rgb(56, 86, 218); padding-bottom: 2rem;"><div><p>Welcome to the website of Marlboro High School Newspaper, The Hitching Post and the Marlboro High School Literary Magazine.
+                             We run out of Marlboro High School through a club called The Hitching Post. The Hitching Post is for news, sports, student life, etc
+                            and the Literary Magazine is for artwork, poems, short stories, etc. We make a new edition every month and at the end of each school year
+                            we create a Senior Edition dedicated to the Senior Class of that year. Any student in Marlboro High School can join the club! And write stories,
+                            articles, poems, and even make artwork for the Hitching Post and The Literary Magazine!.</p></div>
+  
+
+             
+                   
+
+
+
+
+
+
+
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer text-center">
+            <br>
+            <h4 class="mb-4 mt-3">The Marlboro High School Hitching Post and Kaleidoscope</h4>
+            <a href="index.html"><button><p>Home</p></button></a>
+            <a href="about.html"><button><p>About</p></button></a>
+            <a href="staff.html"><button><p>Staff</p></button></a>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            function updateCurrentDate() {
+                const dateElement = document.getElementById("current-date");
+                if (!dateElement) return;
+                const now = new Date();
+                const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+                dateElement.textContent = now.toLocaleDateString(undefined, options);
+            }
+
+            updateCurrentDate();
+            setInterval(updateCurrentDate, 60000);
+        </script>
+    </body>
+</html>
