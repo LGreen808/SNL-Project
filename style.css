@@ -243,19 +243,20 @@ button {
 }
 
 .card-5 {
-    background:   rgb(56, 86, 218),
+    background: linear-gradient(
+        to bottom,
         rgb(56, 86, 218),
-            rgb(235, 225, 83),
-            rgb(235, 225, 83),
-            rgb(253, 255, 124),
+        rgb(56, 86, 218),
+        rgb(235, 225, 83),
+        rgb(235, 225, 83),
+        rgb(253, 255, 124),
         rgb(253, 255, 124)
-     !important;
-    border-bottom: 4px solid rgb(253, 255, 124)
+    ) !important;
+    border-bottom: 4px solid rgb(253, 255, 124);
 }
 
 .story-card p a:hover {
-    color: #56, 86, 218;
-    text-decoration: underline;
+    color: rgb(56, 86, 218);
 }
 
 .site-footer {
@@ -304,4 +305,9 @@ button {
     .site-nav {
         gap: 0.5rem;
     }
+
+    .card-4 {
+        background-color: lightgrey;
+    }
 }
+
