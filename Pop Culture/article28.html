@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Marlboro High School Hitching Post</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+   <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+            <!-- place navbar here -->
+              <header class="site-header">
+            <div class="top-bar container-fluid">
+                <div class="date-panel">
+                    <span id="current-date"></span>
+                </div>
+                <nav class="site-nav">
+                    <a href="News.html">News and Info</a>
+                    <a href="Sports.html">Sports</a>
+                    <a href="StudentLife.html">Student Life</a>
+                    <a href="PopCulture.html">Pop Culture</a>
+                    <a href="#">Literary Magazine</a>
+                    <a href="#">Senior Edition</a>
+                </nav>
+            </div>
+            <div class="brand-panel">
+            <a href="index.html"><img src="img/Newspaper Logo.jpg" alt="The Hitching Post logo" class="brand-logo" /></a>
+            </div>
+        </header>
+        <main class="mb-5 mt-5">
+              <h1 class="text-center mt-4">Yellowjackets Review</h1>
+       <h4 class="text-center mt-4">Ashley Ragone</h4>
+       <h4 class="text-center">June 12th, 2023</h4>
+       
+       <img src="img/article23.png" class="mt-5">
+       <p>Image from Getty Images</p>
+
+       <h4>In 1996, a New Jersey high school soccer team departed for a national championship
+        on a private jet. However, before they could reach their destination in Washington, 
+        the plane crashed in the Canadian forest; they were lost for almost two years. In 
+        an exploration of the teenage psyche and complex relationships among the team, the show
+        looks at how the girls live in the present, 25 years since the horrible accident.</h4>
+
+        <h4>This show took inspiration from both real events and the beloved novel Lord of 
+            the Flies, common themes including being stranded, creating a new society, and,
+            more gruesome, human consumption. This female-leading adaptation, which first 
+            aired in 2021, has already developed a strong following and rave reviews for 
+            its nostalgic yet haunting aesthetic. Popular captain Jackie, burnout Natalie, 
+            outcast Misty and other members of the team work to stay alive while taking 
+            care of one another and building alliances. The performances of acclaimed 
+            actors like Melanie Lynsley and Christina Ricci have been praised, also 
+            including newcomers Sophie Nelisse and Sammi Hanratty. This show provides
+            a unique realm to get lost in, and shocking plot twists with every new episode.</h4>
+
+
+   
+  
+    
+ 
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+ <div class="button-row mb-3">
+            <button>
+            <div class="button-card">
+                <img src="img/likebutton2.png" class="likebutton">
+                <p>Like this article!</p>
+            </div>
+            </button>
+            <button>
+            <div class="button-card">
+                <img src="img/linkbutton2.png" class="likebutton linkbutton">
+                <p>Share this article!</p>
+            </div>
+            </button>
+             <button>
+            <div class="button-card">
+                <img src="img/printbutton2.png" class="likebutton linkbutton">
+                <p>Print this article!</p>
+            </div>
+            </button>
+        </div>
+
+    <h1 class="mt-5">More In Pop Culture</h1>
+      <div class="grid-items">
+        <div class="story-card"><div><img src="img/article2.png"></div><p>Secrets Behind the Louvre Heist</p></div>
+        <div class="story-card"><div><img src="img/article3.avif"></div><p>COP30: The Globe's 30th Climate Conference </p></div>
+            <div class="story-card"><div><img src="img/article4.webp"></div><p>College Polls: Data and Statistics from U.S. Admissions </p></div>
+      </div>
+
+        </main>
+        <footer class="site-footer text-center mt-5">
+            <br>
+            <h4 class="mb-4 mt-3">The Marlboro High School Hitching Post and Kaleidoscope</h4>
+            <a href="index.html"><button><p>Home</p></button></a>
+            <a href="about.html"><button><p>About</p></button></a>
+            <a href="staff.html"><button><p>Staff</p></button></a>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            function updateCurrentDate() {
+                const dateElement = document.getElementById("current-date");
+                if (!dateElement) return;
+                const now = new Date();
+                const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+                dateElement.textContent = now.toLocaleDateString(undefined, options);
+            }
+
+            updateCurrentDate();
+            setInterval(updateCurrentDate, 60000);
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ></script>
+    </body>
+
+
+
+
+
+
+
+
+</html>
