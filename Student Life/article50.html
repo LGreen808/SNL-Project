@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Marlboro High School Hitching Post</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+   <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+            <!-- place navbar here -->
+              <header class="site-header">
+            <div class="top-bar container-fluid">
+                <div class="date-panel">
+                    <span id="current-date"></span>
+                </div>
+                <nav class="site-nav">
+                    <a href="#">News and Info</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Student Life</a>
+                    <a href="#">Pop Culture</a>
+                    <a href="#">Literary Magazine</a>
+                    <a href="#">Senior Edition</a>
+                </nav>
+            </div>
+            <div class="brand-panel">
+            <a href="index.html"><img src="img/Newspaper Logo.jpg" alt="The Hitching Post logo" class="brand-logo" /></a>
+            </div>
+        </header>
+        <main class="mb-5 mt-5">
+              <h1 class="text-center mt-4">Theatre Society Shines Again!</h1>
+       <h4 class="text-center mt-4">Ashley Ragone</h4>
+       <h4 class="text-center">November 18th, 2023</h4>
+       
+       <img src="img/article13.jpg" class="mt-5">
+       
+       <h4>This past weekend, our very own MHS Theatre Society put on a production of Shrek The
+        Musical, Jr.! after months of rehearsal and hard work. I had the opportunity to see the 
+        production’s opening night on November 17th, and am happy to report that I was blown away! 
+        The whole cast and crew did a phenomenal job bringing the play to life.</h4>
+
+        <h4>In Shrek, we follow as the title character has his home taken over by fairytale creatures. 
+            In an effort to send them back to their home of Duloc, he makes an agreement with Lord Farquaad 
+            to find him a princess to marry in exchange for his solitude. He gets to know Princess Fiona, 
+            who he at first hopes to send off but eventually falls in love with her. Shrek and Fiona are 
+            married, and live together as ogres in their swamp with the support and love of Donkey who aided 
+            in the journey.</h4>
+
+        <h4>Before the show even began, I was impressed by the set design. Headed by junior Margaret Surguy 
+            and senior Valerie Moss, I felt fully pulled into the fairytale land of Shrek and fellow creatures. 
+            The costuming and makeup was beautiful and fairly professional, as well as thought-out. When seeing 
+            some cast members up close, there were many intricate details in their costuming and makeup choices 
+            that I was impressed by. Juniors Shea Preston and Nicholas Lutz as Princess Fiona and Shrek, respectively, 
+            absolutely shined on stage and commanded the audience. Having been friends with many cast members for a 
+            long time, I am so proud of their work and talent that has been poured into this performance. Although you 
+            can not see the show any longer as the run has ended, be sure to come to the performances of Letters to Sala 
+            in January and Chicago in March. The Marlboro Theatre Society has been nominated for and won several Count 
+            Basie Awards in the last few years, and the program has become prestigious in our district. Congratulations 
+            to all those involved in this production for another job well done, and be sure to follow MHS TS in all 
+            their future endeavors!</h4>
+      
+
+ 
+
+
+ <div class="button-row mb-3">
+            <button>
+            <div class="button-card">
+                <img src="img/likebutton2.png" class="likebutton">
+                <p>Like this article!</p>
+            </div>
+            </button>
+            <button>
+            <div class="button-card">
+                <img src="img/linkbutton2.png" class="likebutton linkbutton">
+                <p>Share this article!</p>
+            </div>
+            </button>
+             <button>
+            <div class="button-card">
+                <img src="img/printbutton2.png" class="likebutton linkbutton">
+                <p>Print this article!</p>
+            </div>
+            </button>
+        </div>
+
+    <h1 class="mt-5">More In News</h1>
+      <div class="grid-items">
+        <div class="story-card"><div><img src="img/article2.png"></div><p>Secrets Behind the Louvre Heist</p></div>
+        <div class="story-card"><div><img src="img/article3.avif"></div><p>COP30: The Globe's 30th Climate Conference </p></div>
+            <div class="story-card"><div><img src="img/article4.webp"></div><p>College Polls: Data and Statistics from U.S. Admissions </p></div>
+      </div>
+
+        </main>
+        <footer class="site-footer text-center mt-5">
+            <br>
+            <h4 class="mb-4 mt-3">The Marlboro High School Hitching Post and Kaleidoscope</h4>
+            <a href="index.html"><button><p>Home</p></button></a>
+            <a href="about.html"><button><p>About</p></button></a>
+            <a href="staff.html"><button><p>Staff</p></button></a>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            function updateCurrentDate() {
+                const dateElement = document.getElementById("current-date");
+                if (!dateElement) return;
+                const now = new Date();
+                const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+                dateElement.textContent = now.toLocaleDateString(undefined, options);
+            }
+
+            updateCurrentDate();
+            setInterval(updateCurrentDate, 60000);
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ></script>
+    </body>
+
+
+
+
+
+
+
+
+</html>
