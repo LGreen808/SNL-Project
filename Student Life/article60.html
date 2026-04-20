@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Marlboro High School Hitching Post</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+   <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+            <!-- place navbar here -->
+              <header class="site-header">
+            <div class="top-bar container-fluid">
+                <div class="date-panel">
+                    <span id="current-date"></span>
+                </div>
+                <nav class="site-nav">
+                    <a href="#">News and Info</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Student Life</a>
+                    <a href="#">Pop Culture</a>
+                    <a href="#">Literary Magazine</a>
+                    <a href="#">Senior Edition</a>
+                </nav>
+            </div>
+            <div class="brand-panel">
+            <a href="index.html"><img src="img/Newspaper Logo.jpg" alt="The Hitching Post logo" class="brand-logo" /></a>
+            </div>
+        </header>
+        <main class="mb-5 mt-5">
+              <h1 class="text-center mt-4">Top 5 Games of 2020</h1>
+       <h4 class="text-center mt-4">Michael Ward</h4>
+       <h4 class="text-center">February 25th, 2021</h4>
+       
+       <img src="img/article13.jpg" class="mt-5">
+
+      <h4>2020 was a pretty bad year I think we can all agree. Due to the pandemic, 
+        many people resorted to video games as a way to escape from the real world. 
+        So this year I’ll rank the best games I’ve played.</h4>
+
+    <h4>5. Amoung Us</h4>
+
+    <h4>Among Us came out of nowhere, and took the world by storm. It’s addictive and 
+        tension-building gameplay took the hearts of many. While simple, the main 
+        appeal of Among Us is the social aspect of the game, something that was very 
+        lacking in 2020.</h4>
+
+    <h4>4. Tony Hawk's Pro Skater 1+2</h4>
+
+    <h4>This game was a great remake of the originals. It’s music and graphics are 
+        amazing and the pure enjoyment of the gameplay keeps you engaged. It’s so 
+        fun making combos and landing tricks in this great game.</h4>
+      
+    <h4>3. Friday Night Funkin</h4>
+
+    <h4>This game is so stylish, fun and addictive. The music is amazing and 
+        the mod support keeps you coming back for more. Friday Night Funkin’s art 
+        design and rhythm gameplay makes this one of the best games I’ve played this year.</h4>
+
+    <h4>2. Ultrakill</h4>
+
+    <h4>Ultrakill is such an impressive game because it’s made by only one person. 
+        The gameplay, level design, and music are so expertly done that it creates one of 
+        the most memorable experiences I’ve ever played. I highly recommend this game to 
+        anyone who likes fast paced FPS games.</h4>
+
+    <h4>And The Game Of The Year Is........</h4>
+
+    <h4>1. Doom Eternal</h4>
+
+    <h4>Doom Eternal is a 10/10 masterpiece that pushes the player to use all the skills 
+        they have to the fullest extent. It requires the player to think fast and make 
+        important decisions. It shows how important game design is when making a video game fun.</h4>
+
+    
+
+ <div class="button-row mb-3">
+            <button>
+            <div class="button-card">
+                <img src="img/likebutton2.png" class="likebutton">
+                <p>Like this article!</p>
+            </div>
+            </button>
+            <button>
+            <div class="button-card">
+                <img src="img/linkbutton2.png" class="likebutton linkbutton">
+                <p>Share this article!</p>
+            </div>
+            </button>
+             <button>
+            <div class="button-card">
+                <img src="img/printbutton2.png" class="likebutton linkbutton">
+                <p>Print this article!</p>
+            </div>
+            </button>
+        </div>
+
+    <h1 class="mt-5">More In News</h1>
+      <div class="grid-items">
+        <div class="story-card"><div><img src="img/article2.png"></div><p>Secrets Behind the Louvre Heist</p></div>
+        <div class="story-card"><div><img src="img/article3.avif"></div><p>COP30: The Globe's 30th Climate Conference </p></div>
+            <div class="story-card"><div><img src="img/article4.webp"></div><p>College Polls: Data and Statistics from U.S. Admissions </p></div>
+      </div>
+
+        </main>
+        <footer class="site-footer text-center mt-5">
+            <br>
+            <h4 class="mb-4 mt-3">The Marlboro High School Hitching Post and Kaleidoscope</h4>
+            <a href="index.html"><button><p>Home</p></button></a>
+            <a href="about.html"><button><p>About</p></button></a>
+            <a href="staff.html"><button><p>Staff</p></button></a>
+        </footer>
+        <!-- Bootstrap JavaScript Libraries -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            function updateCurrentDate() {
+                const dateElement = document.getElementById("current-date");
+                if (!dateElement) return;
+                const now = new Date();
+                const options = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+                dateElement.textContent = now.toLocaleDateString(undefined, options);
+            }
+
+            updateCurrentDate();
+            setInterval(updateCurrentDate, 60000);
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        ></script>
+    </body>
+
+
+
+
+
+
+</html>
