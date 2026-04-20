@@ -1,7 +1,7 @@
 :root {
     color-scheme: light;
     font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Arial, sans-serif;
-    background-color: #808080;
+    background-color: #c8c8c8;
     color: #2b2b24;
 }
 
@@ -41,11 +41,11 @@ main {
     to bottom,
     rgb(235, 225, 83),
         rgb(235, 225, 83),
-    rgb(56, 86, 218),
-      rgb(56, 86, 218),
-        rgb(56, 86, 218)
+    rgb(107, 130, 233),
+      rgb(107, 130, 233),
+        rgb(107, 130, 233)
   ) !important;
-      border-bottom: 4px solid  rgb(56, 86, 218);
+      border-bottom: 4px solid  rgb(107, 130, 233);
     padding-bottom: 2rem;
 }
 
@@ -244,20 +244,13 @@ button {
 }
 
 .card-5 {
-    background: linear-gradient(
-        to bottom,
-        rgb(56, 86, 218),
-        rgb(56, 86, 218),
-        rgb(235, 225, 83),
-        rgb(235, 225, 83),
-        rgb(253, 255, 124),
-        rgb(253, 255, 124)
-    ) !important;
-    border-bottom: 4px solid rgb(253, 255, 124);
+        border-top: 4px solid rgb(167, 183, 255)
+    background-color: rgb(167, 183, 255) !important;
+    border-bottom: 4px solid rgb(167, 183, 255);
 }
 
 .story-card p a:hover {
-    color: rgb(56, 86, 218);
+    color: rgb(107, 130, 233);
 }
 
 .site-footer {
@@ -272,8 +265,8 @@ button {
     font-size: 0.9rem;
     background-image: linear-gradient(
         to bottom,
-        rgb(56, 86, 218),
-        rgb(56, 86, 218),
+        rgb(107, 130, 233),
+        rgb(107, 130, 233),
             rgb(235, 225, 83),
             rgb(235, 225, 83),
             rgb(253, 255, 124),
